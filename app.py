@@ -6,7 +6,7 @@ Created on Sat Jun  8 17:06:01 2019
 """
 import flask
 from flask import Flask, request , jsonify, render_template
-#import jinja2
+import jinja2
 import numpy as np
 import pandas as pd
 import pickle
