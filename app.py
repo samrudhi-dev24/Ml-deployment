@@ -26,7 +26,7 @@ def home():
 
 
 @app.route('/predict', methods=['POST'])
-def home():
+def pred():
     data1 = request.form['a']
     data2 = request.form['b']
     data3 = request.form['c']
