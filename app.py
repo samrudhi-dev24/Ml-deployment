@@ -20,8 +20,8 @@ app = Flask(__name__)
 filename = 'model.pkl'
 model = pickle.load(open(filename, 'rb'))
 
-@app.route('/')
-def man():
+@app.route('/home')
+def home():
     return render_template('home.html')
 
 
