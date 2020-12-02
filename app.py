@@ -20,7 +20,7 @@ app = Flask(__name__)
 filename = 'model_gym_data.pkl'
 model = pickle.load(open(filename, 'rb'))
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('home.html')
 
