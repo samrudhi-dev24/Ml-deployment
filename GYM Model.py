@@ -42,9 +42,9 @@ metrics.confusion_matrix(expected, predicted)
 
 import pickle
 
-pickle.dump(model_GYM, open("model.pkl", "wb"))
+pickle.dump(model_GYM, open("model_gym_data.pkl", "wb"))
 
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("model_gym_data.pkl", "rb"))
 
 print(model.predict([[40,5.6,70]]))
 

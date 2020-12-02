@@ -17,7 +17,7 @@ import pandas as pd
 import numpy as np
 
 app = Flask(__name__)
-filename = 'model.pkl'
+filename = 'model_gym_data.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 @app.route('/home')
@@ -26,7 +26,7 @@ def home():
 
 
 @app.route('/predict', methods=['POST'])
-def pred():
+def predict():
     data1 = request.form['a']
     data2 = request.form['b']
     data3 = request.form['c']
